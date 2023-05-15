@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    margin: 20px;
+    background-color: #0d192b;
+}
+p{
+    display: inline;
+}
+#card{
+    height: 650px;
+    width: 400px;
+    background-color: #14253d;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 20px;
+}
+#image{
+    flex-basis: 50%;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*-----------------------*/
+#top_card{
+    flex-basis: 12%;
+    padding-top:10px;
+}
+#top_card p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+/*-----------------------*/
+#mid_card{
+    flex-basis: 23%;
+    display: flex;
+    flex-direction: column;
+}
+#top_content{
+    flex-basis: 60%;
+}
+#top_content p{
+    font-size: 1.1rem;
+    color:#8bacda ;
+}
+#bottom_content{
+    flex-basis: 40%;
+    display: flex;
+    position: relative;
+}
+#bottom_content img , #bottom_content p{
+    display: inline;
+}
+#bottom_content img{
+    position: absolute;
+    top: 4px;
+}
+#bottom_content p{
+    padding-left: 25px;
+}
+#rate{
+    flex-basis: 65%;
+}
+#rate p{
+    font-weight: 600;
+    color: cyan;
+}
+#day{
+    flex-basis: 35%;
+}
+#day p{
+    color: #8bacda;
+}
+/*-----------------------*/
+#bottom_card{
+    flex-basis: 15%;
+    padding-top: 25px;
+    display: flex;
+    border-top: 2px solid #2F415B;
+}
+#avt{
+    flex-basis: 10%;
+}
+#avt img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#title{
+    flex-basis: 90%;
+    padding: 5px 15px;
+    color: #8bacda;
+}
+#name{
+    color: #fff;
+}
+/*----------------*/
+@media (max-width: 440px) {
+    body{
+        margin: 0;
+    }
+    #card{
+        width: 100%;
+        height: auto;
+        
+    }
+    #top_card,#mid_card,#top_content{
+        padding-bottom: 20px;
+    }
+    #rate, #day{
+        flex-basis: 50%;
+
+    }
+    #avt{
+        flex-basis: 20%;
+        position: relative;
+    }
+    #avt img{
+        position: absolute;
+        top: 50%;
+        left: 120%;
+        transform: translate(-50%,-50%);
+
+    }
+    #title{
+        flex-basis: 80%;
+        text-align: center;  
+    }
+    #title p{
+        display: block;
+    }
+}
+
+
+
